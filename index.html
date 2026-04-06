@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CMM Clínica Médica Manaus</title>
+    <meta name="description" content="Centro Médico Manoa - Saúde com qualidade, inovação e cuidado verdadeiro.">
+    <meta property="og:title" content="CMM Clínica Médica Manaus">
+    <meta property="og:description" content="Atendimento humanizado, excelência médica e tecnologia em um ambiente acolhedor.">
+    <meta property="og:image" content="https://cmmclinica.com.br/img/5.jpeg">
+    <meta property="og:url" content="https://cmmclinica.com.br">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: { DEFAULT: '#1E3A8A', light: '#3B82F6' },
+                        secondary: '#25D366'
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="font-sans antialiased bg-gray-50 text-gray-800">
+
+    <header id="header" class="fixed w-full top-0 z-50 transition-transform duration-300 glass-dark text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="#" class="text-2xl font-bold tracking-wider">CMM CLÍNICA</a>
+                </div>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#inicio" class="hover:text-primary-light transition-colors">Início</a>
+                    <a href="#sobre" class="hover:text-primary-light transition-colors">Sobre Nós</a>
+                    <a href="#servicos" class="hover:text-primary-light transition-colors">Serviços</a>
+                    <a href="#galeria" class="hover:text-primary-light transition-colors">Galeria</a>
+                    <a href="#contato" class="hover:text-primary-light transition-colors">Contato</a>
+                </nav>
+                <div class="hidden md:flex items-center">
+                    <a href="https://wa.me/5592991124340" target="_blank" class="flex items-center bg-secondary hover:bg-green-600 text-white px-4 py-2 rounded-full font-semibold transition-all shadow-lg hover:shadow-xl">
+                        <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                        Peça pelo WhatsApp
+                    </a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="menu-btn" class="text-white focus:outline-none">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden glass-dark text-white px-4 pt-2 pb-6 space-y-2 text-center">
+            <a href="#inicio" class="block px-3 py-2 rounded-md font-medium">Início</a>
+            <a href="#sobre" class="block px-3 py-2 rounded-md font-medium">Sobre Nós</a>
+            <a href="#servicos" class="block px-3 py-2 rounded-md font-medium">Serviços</a>
+            <a href="#galeria" class="block px-3 py-2 rounded-md font-medium">Galeria</a>
+            <a href="#contato" class="block px-3 py-2 rounded-md font-medium">Contato</a>
+            <a href="https://wa.me/5592991124340" target="_blank" class="block px-3 py-2 mt-4 bg-secondary rounded-full font-semibold">Peça pelo WhatsApp</a>
+        </div>
+    </header>
+
+    <section id="inicio" class="relative h-screen flex items-center justify-center fade-in">
+        <div class="absolute inset-0 bg-black/60 z-10"></div>
+        <img src="img/4.jpeg" alt="Interior CMM" class="absolute inset-0 w-full h-full object-cover z-0">
+        <div class="relative z-20 text-center text-white px-4">
+            <h1 class="text-5xl md:text-7xl font-bold mb-4 drop-shadow-lg slide-up">CMM Clínica Médica</h1>
+            <p class="text-xl md:text-3xl mb-8 font-light drop-shadow-md slide-up" style="animation-delay: 0.2s;">Cuidando de você!</p>
+            <a href="https://wa.me/5592991124340" target="_blank" class="inline-flex items-center bg-primary hover:bg-primary-light text-white px-8 py-4 rounded-full text-lg font-bold transition-all transform hover:scale-105 shadow-2xl slide-up" style="animation-delay: 0.4s;">
+                <svg class="w-6 h-6 mr-3" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                Agende seu Atendimento
+            </a>
+        </div>
+    </section>
+
+    <section id="sobre" class="py-24 bg-white">
+        <div class="max-w-4xl mx-auto px-4 text-center slide-up">
+            <h2 class="text-4xl font-bold text-primary mb-8">Sobre Nós</h2>
+            <div class="text-lg text-gray-600 leading-relaxed space-y-6">
+                <p>Desde 2005, o Centro Médico Manoa dedica-se a oferecer saúde com qualidade, inovação e cuidado verdadeiro.</p>
+                <p>A clínica tornou-se referência em Manaus por unir atendimento humanizado, excelência médica e tecnologia em um ambiente acolhedor e profissional.</p>
+                <p>Com estrutura moderna e profissionais qualificados, oferece serviços completos que proporcionam praticidade e segurança para seus pacientes.</p>
+                <p>Fundada pelo Dr. Luiz Otávio Silva da Silva, médico ultrassonografista, a clínica mantém como pilares a ética, a qualidade e o compromisso com a saúde da comunidade.</p>
+                <p>Em meados de 2014, com foco na expansão da marca, passou a se consolidar como Clínica Médica Manaus, ampliando seu atendimento para a capital e interior do Amazonas, tornando-se referência em ultrassonografias, exames laboratoriais, consultas médicas e fisioterapia.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="servicos" class="py-24 bg-gray-50 relative overflow-hidden">
+        <div class="absolute inset-0 bg-primary opacity-5 transform -skew-y-3 z-0"></div>
+        <div class="max-w-7xl mx-auto px-4 relative z-10">
+            <h2 class="text-4xl font-bold text-center text-primary mb-16">Nossos Serviços</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <div class="glass bg-white p-8 rounded-2xl text-center transition-transform hover:-translate-y-2">
+                    <svg class="w-12 h-12 text-primary mx-auto mb-4" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"> <g fill="currentColor"> <path fill="none" d="M0 0H24V24H0z" /> <path d="M19 2v2h-2v3c1.657 0 3 1.343 3 3v11c0 .552-.448 1-1 1H5c-.552 0-1-.448-1-1V10c0-1.657 1.343-3 3-3V4H5V2h14zm-2 7H7c-.552 0-1 .448-1 1v10h12V10c0-.552-.448-1-1-1zm-4 2v2h2v2h-2.001L13 17h-2l-.001-2H9v-2h2v-2h2zm2-7H9v3h6V4z" /> </g> </svg>
+                    <h3 class="text-xl font-bold mb-3">Consultas Médicas</h3>
+                    <p class="text-gray-600">Ampla variedade de especialidades médicas para garantir o seu bem-estar diário.</p>
+                </div>
+
+                <div class="glass bg-white p-8 rounded-2xl text-center transition-transform hover:-translate-y-2">
+                    <svg class="w-12 h-12 text-primary mx-auto mb-4" fill="currentColor" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 442 442" xml:space="preserve"> <g> <path d="M231.5,50.5c0-5.79-4.71-10.5-10.5-10.5c-5.79,0-10.5,4.71-10.5,10.5S215.21,61,221,61C226.79,61,231.5,56.29,231.5,50.5z" /> <path d="M346,163.682h-60V122c0-5.522-4.478-10-10-10h-10V10c0-5.523-4.478-10-10-10h-70c-5.523,0-10,4.477-10,10v102h-10 c-5.523,0-10,4.478-10,10v41.682H96c-11.028,0-20,8.972-20,20V422c0,11.028,8.972,20,20,20h250c11.028,0,20-8.972,20-20V183.682 C366,172.653,357.028,163.682,346,163.682z M196,20h50v92h-50V20z M96,422V183.682h70c5.523,0,10-4.477,10-10V132h35v71.682h-85 c-5.523,0-10,4.478-10,10V392c0,5.522,4.477,10,10,10h190c5.522,0,10-4.478,10-10v-60.892c0-5.522-4.478-10-10-10s-10,4.478-10,10 V382H136V223.682h75V352c0,5.522,4.477,10,10,10c5.523,0,10-4.478,10-10V223.682h75V297c0,5.522,4.478,10,10,10s10-4.478,10-10 v-83.318c0-5.522-4.478-10-10-10h-85V132h35v41.682c0,5.523,4.478,10,10,10h70L346.002,422H96z" /> </g> </svg>
+                    <h3 class="text-xl font-bold mb-3">Exames e Diagnósticos</h3>
+                    <p class="text-gray-600">Equipamentos modernos para ultrassonografias e precisão em exames laboratoriais.</p>
+                </div>
+
+                <div class="glass bg-white p-8 rounded-2xl text-center transition-transform hover:-translate-y-2">
+                    <svg class="w-12 h-12 text-primary mx-auto mb-4" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="10" cy="6" r="4" stroke="currentColor" stroke-width="1.5"/>
+                    <path d="M19 2C19 2 21 3.2 21 6C21 8.8 19 10 19 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                    <path d="M17 4C17 4 18 4.6 18 6C18 7.4 17 8 17 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                    <path d="M17.9975 18C18 17.8358 18 17.669 18 17.5C18 15.0147 14.4183 13 10 13C5.58172 13 2 15.0147 2 17.5C2 19.9853 2 22 10 22C12.231 22 13.8398 21.8433 15 21.5634" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                    <h3 class="text-xl font-bold mb-3">Atendimento Humanizado</h3>
+                    <p class="text-gray-600">Acolhimento especial e cuidado verdadeiro em cada etapa do seu tratamento.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="galeria" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center text-primary mb-16">Nossa Estrutura</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+                <div class="overflow-hidden rounded-xl shadow-md">
+                    <img src="img/5.jpeg" alt="Fachada CMM" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="overflow-hidden rounded-xl shadow-md">
+                    <img src="img/1.jpeg" alt="Corredor CMM" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="overflow-hidden rounded-xl shadow-md">
+                    <img src="img/2.jpeg" alt="Entrada CMM" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="overflow-hidden rounded-xl shadow-md md:col-span-2">
+                    <img src="img/4.jpeg" alt="Recepção CMM" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="overflow-hidden rounded-xl shadow-md">
+                    <img src="img/3.jpeg" alt="Sala de Espera CMM" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-500">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="py-24 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center text-primary mb-16">Contato e Localização</h2>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                
+                <div class="glass bg-white p-8 rounded-2xl">
+                    <h3 class="text-2xl font-bold text-primary mb-6">Informações da Clínica</h3>
+                    <ul class="space-y-4 text-gray-700">
+                        <li class="flex flex-col border-b border-gray-100 pb-2">
+                            <span class="text-xs text-gray-400 uppercase tracking-wider font-semibold">CNPJ</span>
+                            <span>07.602.799/0001-35 </span>
+                        </li>
+                        <li class="flex flex-col border-b border-gray-100 pb-2">
+                            <span class="text-xs text-gray-400 uppercase tracking-wider font-semibold">Nome Empresarial</span>
+                            <span>CENTRO MEDICO DO MANOA LTDA </span>
+                        </li>
+                        <li class="flex flex-col border-b border-gray-100 pb-2">
+                            <span class="text-xs text-gray-400 uppercase tracking-wider font-semibold">Logradouro</span>
+                            <span>AV FRANCISCO QUEIROZ , N° 515 </span>
+                        </li>
+                        <li class="flex flex-col border-b border-gray-100 pb-2">
+                            <span class="text-xs text-gray-400 uppercase tracking-wider font-semibold">Bairro / Distrito</span>
+                            <span>COLONIA STO ANTONIO </span>
+                        </li>
+                        <li class="flex flex-col border-b border-gray-100 pb-2">
+                            <span class="text-xs text-gray-400 uppercase tracking-wider font-semibold">Município - UF</span>
+                            <span>MANAUS  - AM </span>
+                        </li>
+                        <li class="flex flex-col border-b border-gray-100 pb-2">
+                            <span class="text-xs text-gray-400 uppercase tracking-wider font-semibold">CEP</span>
+                            <span>69.093-000 </span>
+                        </li>
+                        <li class="flex flex-col border-b border-gray-100 pb-2">
+                            <span class="text-xs text-gray-400 uppercase tracking-wider font-semibold">Telefone</span>
+                            <span class="font-bold text-primary">(92) 3581-3727 </span>
+                        </li>
+                        <li class="flex flex-col pt-1">
+                            <span class="text-xs text-gray-400 uppercase tracking-wider font-semibold">Endereço Eletrônico</span>
+                            <span>GERENCIA@CMMCLINICA.COM.BR </span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="h-[500px] w-full rounded-2xl overflow-hidden shadow-lg glass">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3984.1481190539955!2d-60.015848!3d-3.0549929!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x926c19f12281a021%3A0x6b44a2c0bc3ab7e2!2sAv.%20Francisco%20Queiroz%2C%20515%20-%20Col%C3%B4nia%20Santo%20Ant%C3%B4nio%2C%20Manaus%20-%20AM%2C%2069093-000!5e0!3m2!1spt-BR!2sbr!4v1680000000000!5m2!1spt-BR!2sbr" 
+                        width="100%" 
+                        height="100%" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-primary text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h3 class="text-2xl font-bold tracking-wider mb-4">CMM CLÍNICA MÉDICA</h3>
+            <p class="text-primary-light mb-2">CENTRO MEDICO DO MANOA LTDA</p>
+            <p class="text-sm text-gray-300 mb-6">CNPJ: 07.602.799/0001-35</p>
+            <div class="flex justify-center space-x-6 mb-8">
+                <a href="#" id="open-modal" class="text-sm text-gray-300 hover:text-white transition-colors">Política de Privacidade</a>
+            </div>
+            <p class="text-sm text-gray-400">&copy; <span id="year"></span> CMM Clínica Médica Manaus. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <div id="privacy-modal" class="fixed inset-0 z-[100] hidden flex items-center justify-center">
+        <div class="absolute inset-0 bg-black/50 backdrop-blur-sm" id="modal-backdrop"></div>
+        <div class="relative bg-white w-11/12 max-w-2xl rounded-2xl p-8 max-h-[80vh] overflow-y-auto shadow-2xl slide-up">
+            <h2 class="text-2xl font-bold text-primary mb-4">Política de Privacidade</h2>
+            <div class="text-gray-600 space-y-4 text-sm leading-relaxed">
+                <p>A CMM Clínica Médica Manaus valoriza a privacidade de seus pacientes e visitantes. Esta política de privacidade destina-se a informar como gerenciamos as informações em nosso site institucional.</p>
+                <p><strong>Coleta de Dados:</strong> Nosso site é de caráter estritamente institucional e informativo. Não realizamos a coleta automática de dados pessoais, nem utilizamos formulários de cadastro na plataforma web que armazenem informações em banco de dados próprios.</p>
+                <p><strong>Cookies:</strong> Podemos utilizar cookies básicos apenas para melhorar a experiência de navegação e desempenho do site, sem finalidade de rastreamento de informações sensíveis.</p>
+                <p><strong>Contato via WhatsApp:</strong> Ao clicar nos links de redirecionamento para o WhatsApp, você estará utilizando uma plataforma de terceiros (Meta). As informações trocadas por este canal estão sujeitas aos termos de uso e política de privacidade do próprio aplicativo.</p>
+                <p><strong>Segurança:</strong> Comprometemo-nos a manter o site seguro e atualizado, protegendo nossa estrutura contra acessos não autorizados.</p>
+                <p>Para dúvidas relacionadas aos seus dados ou tratamentos médicos, por favor, entre em contato diretamente com nossa recepção presencialmente ou pelos telefones oficiais.</p>
+            </div>
+            <div class="mt-8 text-right">
+                <button id="close-modal" class="bg-primary hover:bg-primary-light text-white px-6 py-2 rounded-lg font-semibold transition-colors">Fechar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
